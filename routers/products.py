@@ -19,7 +19,7 @@ def get_all_products():
     return sample_products
 
 # Эндпоинт для поиска товаров [cite: 46]
-@router.get("/products/search", response_model=List[Product])
+@router.post("/products/search", response_model=List[Product])
 async def search_products(
         keyword: str,
         category: Optional[str] = None,

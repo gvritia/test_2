@@ -1,8 +1,6 @@
-from fastapi import APIRouter, Depends, Response, Header, HTTPException, status, Request
-from fastapi.exceptions import RequestValidationError
+from fastapi import APIRouter, Response, Header, HTTPException, Request
 from datetime import datetime
 from models.common_headers import CommonHeaders
-from typing import Annotated
 
 router = APIRouter(tags=["Задания 5.4–5.5 — Заголовки"])
 
